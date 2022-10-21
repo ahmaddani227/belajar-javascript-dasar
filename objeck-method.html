@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Objeck Method</title>
+</head>
+<body>
+    
+    <script>
+        /*
+            #OBJECK METHOD
+                -Pada tipe data objeck, kita sudah membahas tentang property di objeck
+                -Karena sebenarnya function juga merupakan salah satu tipe data, jadi function pun sebenarnya bisa ditambahkan sebagai property di objeck
+                -Cara pembuaatannya pun sama dengan function sebagai value 
+                -Function di obajeck kadang disebut juga sebagai Objeck Method
+        */
+
+        // CARA 1
+        function func(name) {
+            alert(`Hello ${name}`);
+        };
+       
+        const person = {
+            name: "Ahmad",
+            //Anonymous Function
+            sayHello: function(name) { 
+                alert(`Hello ${name}`);
+            },
+            // Arrow Function
+            arrowFunc: name => alert(`Hello ${name}`),
+            // Deklarasi Function Diluar
+            sayHello2: func
+        };
+
+        person.sayHello(`Dani`);
+        person.arrowFunc(`Ahmad`);
+        person.sayHello2(`Naruto`);
+
+        // CARA 2
+        const person2 = {
+            name: "Dani"
+        };
+
+        // Anonymous Function
+        // person2.sayHello = function (name) {
+        //     alert(`Hai ${name}`);
+        // }
+
+        // Arrow Function
+        person2.sayHello = name => alert(`Hai ${name}`);
+        
+        person2.sayHello(`Sasuke`);
+
+    </script>
+</body>
+</html>

@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>If Expression atau Percabangan</title>
+</head>
+<body>
+    
+    <script>
+        /*
+            #IF EXPRESSION
+                -Dalam JavaScript, if adalah salah satu kata kunci yang digunakan untuk percabangan
+                -Percabangan artinya kita bisa mengeksekusi kode program tertentu ketika suatu kondisi terpenuhi
+                -Hampir di semua bahasa pemrograman mendukung if expression
+            #ELSE EXPRESSION
+                -Blok if akan dieksekusi ketika kondisi if bernilai true
+                -Kadang kita ingin melakukan eksekusi program tertentu jika if bernilai false
+                -Hal ini bisa dilakukan menggunakan else expression
+            #ELSE IF EXPRESSION
+                -Kadang dalam if, kita butuh membuat beberaoa kondisi
+                -Kasus seperti ini, di JavaScript bisa menggunakan Else if expression
+        */ 
+
+        const examValue = 85;
+        if (examValue > 80) {
+            document.writeln("<p>Good Joob : A</p>");
+        }else if(examValue > 70){
+            document.writeln("<p>Good Joob : B</p>");
+        }else if(examValue > 60){
+            document.writeln("<p>Good Joob : C</p>");
+        }else{
+            document.writeln("<p>Try Again Next Year</p>");
+        }
+    </script>
+</body>
+</html>
