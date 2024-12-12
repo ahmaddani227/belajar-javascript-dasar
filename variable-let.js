@@ -1,0 +1,22 @@
+// Variable yang bisa diubah-ubah
+let fullName = "Ahmad Dani";
+document.writeln(fullName);
+document.writeln("</br>");
+document.writeln(fullName);
+document.writeln("</br>");
+document.writeln(fullName);
+document.writeln("</br>");
+document.writeln(fullName);
+document.writeln("</br>");
+document.writeln(fullName);
+document.writeln("</br>");
+document.writeln(fullName);
+document.writeln("</br>");
+document.writeln(fullName);
+document.writeln("</br>");
+document.writeln(fullName);
+document.writeln("</br>");
+document.writeln(fullName);
+document.writeln("</br>");
+document.writeln(fullName);
+document.writeln("</br>");
